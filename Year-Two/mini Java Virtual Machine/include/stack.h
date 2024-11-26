@@ -41,3 +41,21 @@ bool stack_peek(stack s, item_type* value);
  *    false   otherwise
  */
 bool stack_pop(stack s, item_type* value);
+
+/**
+ * Returns the number of items in the stack
+ * Parameters:
+ *   s       Stack for which to determine the size
+ * Returns:
+ *    The number of items in the stack
+ */
+int stack_size(stack s);
+
+/**
+ * Frees the memory associated with the stack
+ * Parameters:
+ *    s       Stack to free
+ */
+void stack_free(stack s);
+
+#endif
